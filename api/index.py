@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 import os
 from flask import Flask
 
+#Fetch variables
+CONNECTION_STRING = os.getenv("CONNECTION_STRING")
 app = Flask(__name__)
 
 @app.route('/')
